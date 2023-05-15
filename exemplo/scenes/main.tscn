@@ -396,10 +396,10 @@ margin_left = -360.0
 margin_top = -124.594
 margin_right = 360.0
 margin_bottom = 19.4059
-custom_fonts/font = SubResource( 4 )
 custom_colors/font_color_shadow = Color( 0.179688, 0.0100786, 0.00561523, 1 )
 custom_constants/shadow_offset_x = 8
 custom_constants/shadow_offset_y = 8
+custom_fonts/font = SubResource( 4 )
 text = "1"
 align = 1
 valign = 1
@@ -426,10 +426,10 @@ margin_left = -360.0
 margin_top = 97.4059
 margin_right = 360.0
 margin_bottom = 241.406
-custom_fonts/font = SubResource( 4 )
 custom_colors/font_color_shadow = Color( 0.179688, 0.0100786, 0.00561523, 1 )
 custom_constants/shadow_offset_x = 8
 custom_constants/shadow_offset_y = 8
+custom_fonts/font = SubResource( 4 )
 text = "0"
 align = 1
 valign = 1
@@ -481,8 +481,8 @@ material = SubResource( 9 )
 position = Vector2( 366.941, 525.356 )
 scale = Vector2( 3.17288, 3.17288 )
 texture = ExtResource( 9 )
-vframes = 3
 hframes = 10
+vframes = 3
 
 [node name="electricity1" type="Sprite" parent="."]
 visible = false
@@ -490,8 +490,8 @@ material = SubResource( 9 )
 position = Vector2( 366.941, 525.356 )
 scale = Vector2( 3.17288, 3.17288 )
 texture = ExtResource( 10 )
-vframes = 2
 hframes = 10
+vframes = 2
 frame = 1
 
 [node name="sfxFire" type="AudioStreamPlayer" parent="."]
@@ -499,6 +499,7 @@ stream = ExtResource( 11 )
 
 [node name="sfxElectricity" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 12 )
+
 [connection signal="pressed" from="btnPlay" to="." method="_on_btnPlay_pressed"]
 [connection signal="pressed" from="btnPlay" to="." method="_on_play_now_pressed"]
 [connection signal="pressed" from="Control/btnReset" to="." method="_on_btnReset_pressed"]

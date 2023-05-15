@@ -26,7 +26,7 @@ func goto_scene(path):
 func show_error():
 	pass
 	
-func _process(time):
+func _process(_time):
 	if loader == null:
 		# no need to process anymore
 		set_process(false)

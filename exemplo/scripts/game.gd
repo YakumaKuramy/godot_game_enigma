@@ -61,7 +61,7 @@ func newOrLoadFile(_path, _data) -> void:
 		fl.close()
 	else:
 		# Se existe carrega o arquivo
-		loadSavedGame()
+		var _load = loadSavedGame()
 
 # carrega o arquivo de save
 func loadSavedGame() -> Dictionary:
