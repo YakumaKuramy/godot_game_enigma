@@ -130,7 +130,7 @@ func _unhandled_key_input(event):
 			# verifica a resposta
 			_checkAnswer()
 
-func _process(delta):
+func _process(_delta):
 	# se o timer não estiver iniciado então sai
 	if $TimerNextLevel.is_stopped(): return
 	
